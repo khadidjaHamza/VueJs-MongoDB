@@ -1,0 +1,51 @@
+<html lang="fr">
+	<head>
+		<title>CRUD avec Express + MongoDB</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	
+	<body onload="loadIndex()">
+
+		<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a  href="restaurant.html">Ajouter un restaurant</a>
+			</div>
+			<div class="nav navbar-nav navbar-center">
+				<p1  onclick="getRequest1()">Visualiser les restaurants</p1>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+			<li><a href="/">Accueil</a></li>
+		</div>
+		<div class="container-fluid">
+		<h id="info"></h>
+		</div>
+		</nav>
+		<div id="reponseGETenTableau"></div>
+					<h3>Liste des restaurants</h3>
+				<table id="table" class="avectri">				   
+				   <thead>
+					   <tr>
+						   <th onclick="SortArrayByName()">Name</th>
+						   <th onclick="SortArrayByName()">Cuisine</th>
+					   </tr>
+				   </thead>
+				   <tbody id="tb">
+				   </tbody>
+		        </table>		
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<p id="btnPrev" onclick="prevPage()" class="button">Previous</p>
+						</div>
+						<ul class="nav navbar-nav navbar-right">
+							<p id="btnNext" onclick="nextPage()" class="button">Next</p>
+					</div>
+				</nav>
+		<footer class="text-center">
+		TP  - NodeJS et MongoDB | M2 
+	</footer>
+	<script src="js/crudAvecFetchAvecTable.js"></script>
+	</body>
+</html>

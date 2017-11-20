@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add Restaurant</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+</head>
+<body >
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a  href="/">Les restaurants</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/">Accueil</a></li>
+		</div>
+		
+	</nav>
+
+	<div class="container">
+		<form method="post" action="javascript:;" onsubmit="addRestaurant(this)">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label for="restaurant_id">ID *</label>
+					<input type="text" class="form-control" id="restaurant_id" name="restaurant_id" placeholder="Restaurant_id" required>
+				</div>
+				<div class="form-group">
+					<label for="cuisine">Cuisine *</label>
+					<input type="text" class="form-control" id="cuisine" name="cuisine" placeholder="Cuisine" required>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label for="name">Nom *</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="Nom" required>
+				</div>
+			</div>
+			<div class="col-sm-offset-4 col-sm-4">
+				<button type="submit" class="btn btn-primary col-xs-12">Enregister</button>
+			</div>
+			<div>
+			<h>(*) Champs obligatoires.</h>
+			</div>
+							
+		</form>
+	</div>
+	
+	<footer class="text-center">
+		TP  - NodeJS et MongoDB | M2 
+	</footer>
+	<script src="js/crudAvecFetchAvecTable.js"></script>
+</body>
+</html>
